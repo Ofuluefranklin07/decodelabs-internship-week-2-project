@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xSaver — Reports</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar" aria-label="Site header">
+            <a href="index.html" class="navbar-brand">
+                <strong>💳 xSaver</strong>
+                <span>Track. Manage. Save More</span>
+            </a>
+            <button
+                type="button"
+                class="menu-btn"
+                popovertarget="sidebar-popover"
+                popovertargetaction="toggle"
+                aria-label="Open menu"
+            >
+                ☰
+            </button>
+        </nav>
+
+        <aside class="sidebar" aria-label="Sidebar navigation">
+            <div class="sidebar-logo">💳 xSaver</div>
+
+            <nav class="menu" aria-label="Main navigation">
+                <a href="index.html" class="menu-item">🏠 Dashboard</a>
+                <a href="transaction.html" class="menu-item">↔ Transactions</a>
+                <a href="budget.html" class="menu-item">📊 Budget</a>
+                <a href="reports.html" class="menu-item active">📈 Reports</a>
+            </nav>
+
+            <div class="upgrade">
+                <p class="upgrade-label">👑 Upgrade to Premium</p>
+                <p class="upgrade-text">Unlock more insights</p>
+                <button type="button" class="btn btn-white">Upgrade Now</button>
+            </div>
+
+            <div class="sidebar-user">
+                <div class="avatar" aria-hidden="true">JD</div>
+                <div class="sidebar-user-info">
+                    <span class="sidebar-user-name">John Doe</span>
+                    <span class="sidebar-user-email">john@example.com</span>
+                </div>
+                <span class="sidebar-user-chevron" aria-hidden="true">›</span>
+            </div>
+        </aside>
+
+        <div id="sidebar-popover" popover="auto" class="sidebar-popover">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">💳 xSaver</div>
+                <button
+                    type="button"
+                    class="close-btn"
+                    popovertarget="sidebar-popover"
+                    popovertargetaction="hide"
+                    aria-label="Close menu"
+                >
+                    ✕
+                </button>
+            </div>
+
+            <nav class="menu" aria-label="Main navigation">
+                <a href="index.html" class="menu-item">🏠 Dashboard</a>
+                <a href="transaction.html" class="menu-item">↔ Transactions</a>
+                <a href="budget.html" class="menu-item">📊 Budget</a>
+                <a href="reports.html" class="menu-item active">📈 Reports</a>
+            </nav>
+
+            <div class="upgrade">
+                <p class="upgrade-label">👑 Upgrade to Premium</p>
+                <p class="upgrade-text">Unlock more insights</p>
+                <button type="button" class="btn btn-white">Upgrade Now</button>
+            </div>
+
+            <div class="sidebar-user">
+                <div class="avatar" aria-hidden="true">JD</div>
+                <div class="sidebar-user-info">
+                    <span class="sidebar-user-name">John Doe</span>
+                    <span class="sidebar-user-email">john@example.com</span>
+                </div>
+                <span class="sidebar-user-chevron" aria-hidden="true">›</span>
+            </div>
+        </div>
+
+        <main class="main">
+            <header class="page-header">
+                <div class="page-header-text">
+                    <h1 class="page-title">Reports</h1>
+                    <p class="page-subtitle">Monthly insights into your financial habits.</p>
+                </div>
+                <div class="page-header-actions">
+                    <label class="search-bar">
+                        <span class="search-icon" aria-hidden="true">🔍</span>
+                        <input type="search" placeholder="Search reports..." aria-label="Search reports">
+                    </label>
+                    <button type="button" class="icon-btn" aria-label="Notifications">
+                        🔔
+                        <span class="badge">3</span>
+                    </button>
+                    <button type="button" class="profile-btn" aria-label="Open profile menu">
+                        <span class="avatar avatar-sm">JD</span>
+                        <span class="profile-chevron" aria-hidden="true">▾</span>
+                    </button>
+                </div>
+            </header>
+
+            <section class="reports-grid" aria-label="Monthly reports">
+                <article class="card report-card">
+                    <span class="label">May 2024</span>
+                    <h2 class="report-card-title">Monthly Summary</h2>
+                    <ul class="report-stats">
+                        <li><span class="label">Income</span><span class="value value-blue">$45,200.00</span></li>
+                        <li><span class="label">Expenses</span><span class="value value-red">$20,640.00</span></li>
+                        <li><span class="label">Net Savings</span><span class="value value-green">$24,560.00</span></li>
+                    </ul>
+                    <p class="trend trend-up">↗ 8.5% savings vs last month</p>
+                </article>
+
+                <article class="card report-card">
+                    <span class="label">April 2024</span>
+                    <h2 class="report-card-title">Monthly Summary</h2>
+                    <ul class="report-stats">
+                        <li><span class="label">Income</span><span class="value value-blue">$42,100.00</span></li>
+                        <li><span class="label">Expenses</span><span class="value value-red">$21,800.00</span></li>
+                        <li><span class="label">Net Savings</span><span class="value value-green">$20,300.00</span></li>
+                    </ul>
+                    <p class="trend trend-up">↗ 5.2% savings vs last month</p>
+                </article>
+
+                <article class="card report-card">
+                    <span class="label">March 2024</span>
+                    <h2 class="report-card-title">Monthly Summary</h2>
+                    <ul class="report-stats">
+                        <li><span class="label">Income</span><span class="value value-blue">$41,500.00</span></li>
+                        <li><span class="label">Expenses</span><span class="value value-red">$22,400.00</span></li>
+                        <li><span class="label">Net Savings</span><span class="value value-green">$19,100.00</span></li>
+                    </ul>
+                    <p class="trend trend-down">↘ 2.1% savings vs last month</p>
+                </article>
+
+                <article class="card report-card">
+                    <span class="label">Q1 2024</span>
+                    <h2 class="report-card-title">Quarterly Overview</h2>
+                    <ul class="report-stats">
+                        <li><span class="label">Total Income</span><span class="value value-blue">$124,800.00</span></li>
+                        <li><span class="label">Total Expenses</span><span class="value value-red">$64,840.00</span></li>
+                        <li><span class="label">Total Saved</span><span class="value value-green">$59,960.00</span></li>
+                    </ul>
+                    <p class="label">Best category: Savings (+74% goal)</p>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

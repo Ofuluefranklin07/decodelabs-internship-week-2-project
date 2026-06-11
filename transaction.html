@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xSaver — Transactions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar" aria-label="Site header">
+            <a href="index.html" class="navbar-brand">
+                <strong>💳 xSaver</strong>
+                <span>Track. Manage. Save More</span>
+            </a>
+            <button
+                type="button"
+                class="menu-btn"
+                popovertarget="sidebar-popover"
+                popovertargetaction="toggle"
+                aria-label="Open menu"
+            >
+                ☰
+            </button>
+        </nav>
+
+        <aside class="sidebar" aria-label="Sidebar navigation">
+            <div class="sidebar-logo">💳 xSaver</div>
+
+            <nav class="menu" aria-label="Main navigation">
+                <a href="index.html" class="menu-item">🏠 Dashboard</a>
+                <a href="transaction.html" class="menu-item active">↔ Transactions</a>
+                <a href="budget.html" class="menu-item">📊 Budget</a>
+                <a href="reports.html" class="menu-item">📈 Reports</a>
+            </nav>
+
+            <div class="upgrade">
+                <p class="upgrade-label">👑 Upgrade to Premium</p>
+                <p class="upgrade-text">Unlock more insights</p>
+                <button type="button" class="btn btn-white">Upgrade Now</button>
+            </div>
+
+            <div class="sidebar-user">
+                <div class="avatar" aria-hidden="true">JD</div>
+                <div class="sidebar-user-info">
+                    <span class="sidebar-user-name">John Doe</span>
+                    <span class="sidebar-user-email">john@example.com</span>
+                </div>
+                <span class="sidebar-user-chevron" aria-hidden="true">›</span>
+            </div>
+        </aside>
+
+        <div id="sidebar-popover" popover="auto" class="sidebar-popover">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">💳 xSaver</div>
+                <button
+                    type="button"
+                    class="close-btn"
+                    popovertarget="sidebar-popover"
+                    popovertargetaction="hide"
+                    aria-label="Close menu"
+                >
+                    ✕
+                </button>
+            </div>
+
+            <nav class="menu" aria-label="Main navigation">
+                <a href="index.html" class="menu-item">🏠 Dashboard</a>
+                <a href="transaction.html" class="menu-item active">↔ Transactions</a>
+                <a href="budget.html" class="menu-item">📊 Budget</a>
+                <a href="reports.html" class="menu-item">📈 Reports</a>
+            </nav>
+
+            <div class="upgrade">
+                <p class="upgrade-label">👑 Upgrade to Premium</p>
+                <p class="upgrade-text">Unlock more insights</p>
+                <button type="button" class="btn btn-white">Upgrade Now</button>
+            </div>
+
+            <div class="sidebar-user">
+                <div class="avatar" aria-hidden="true">JD</div>
+                <div class="sidebar-user-info">
+                    <span class="sidebar-user-name">John Doe</span>
+                    <span class="sidebar-user-email">john@example.com</span>
+                </div>
+                <span class="sidebar-user-chevron" aria-hidden="true">›</span>
+            </div>
+        </div>
+
+        <main class="main">
+            <header class="page-header">
+                <div class="page-header-text">
+                    <h1 class="page-title">Transactions</h1>
+                    <p class="page-subtitle">All your income and expenses in one place.</p>
+                </div>
+                <div class="page-header-actions">
+                    <label class="search-bar">
+                        <span class="search-icon" aria-hidden="true">🔍</span>
+                        <input type="search" placeholder="Search transactions..." aria-label="Search transactions">
+                    </label>
+                    <button type="button" class="icon-btn" aria-label="Notifications">
+                        🔔
+                        <span class="badge">3</span>
+                    </button>
+                    <button type="button" class="profile-btn" aria-label="Open profile menu">
+                        <span class="avatar avatar-sm">JD</span>
+                        <span class="profile-chevron" aria-hidden="true">▾</span>
+                    </button>
+                </div>
+            </header>
+
+            <div class="filter-tabs" role="tablist" aria-label="Filter transactions">
+                <button type="button" class="filter-tab active">All</button>
+                <button type="button" class="filter-tab">Income</button>
+                <button type="button" class="filter-tab">Expenses</button>
+            </div>
+
+            <section class="card transactions-card transactions-page" aria-label="All transactions">
+                <ul class="transaction-list">
+                    <li class="transaction-item">
+                        <span class="transaction-icon transaction-icon-green" aria-hidden="true">💰</span>
+                        <div class="transaction-info">
+                            <span class="transaction-name">Salary</span>
+                            <span class="label">Income</span>
+                        </div>
+                        <div class="transaction-meta">
+                            <span class="transaction-amount amount-positive">+$3,200.00</span>
+                            <span class="label">May 31, 2024</span>
+                        </div>
+                    </li>
+                    <li class="transaction-item">
+                        <span class="transaction-icon transaction-icon-red" aria-hidden="true">🛒</span>
+                        <div class="transaction-info">
+                            <span class="transaction-name">Grocery Store</span>
+                            <span class="label">Food &amp; Dining</span>
+                        </div>
+                        <div class="transaction-meta">
+                            <span class="transaction-amount amount-negative">−$120.50</span>
+                            <span class="label">May 30, 2024</span>
+                        </div>
+                    </li>
+                    <li class="transaction-item">
+                        <span class="transaction-icon transaction-icon-blue" aria-hidden="true">🚗</span>
+                        <div class="transaction-info">
+                            <span class="transaction-name">Uber Ride</span>
+                            <span class="label">Transport</span>
+                        </div>
+                        <div class="transaction-meta">
+                            <span class="transaction-amount amount-negative">−$18.75</span>
+                            <span class="label">May 29, 2024</span>
+                        </div>
+                    </li>
+                    <li class="transaction-item">
+                        <span class="transaction-icon transaction-icon-purple" aria-hidden="true">📺</span>
+                        <div class="transaction-info">
+                            <span class="transaction-name">Netflix</span>
+                            <span class="label">Entertainment</span>
+                        </div>
+                        <div class="transaction-meta">
+                            <span class="transaction-amount amount-negative">−$15.99</span>
+                            <span class="label">May 28, 2024</span>
+                        </div>
+                    </li>
+                    <li class="transaction-item">
+                        <span class="transaction-icon transaction-icon-orange" aria-hidden="true">⚡</span>
+                        <div class="transaction-info">
+                            <span class="transaction-name">Electric Bill</span>
+                            <span class="label">Utilities</span>
+                        </div>
+                        <div class="transaction-meta">
+                            <span class="transaction-amount amount-negative">−$89.00</span>
+                            <span class="label">May 27, 2024</span>
+                        </div>
+                    </li>
+                    <li class="transaction-item">
+                        <span class="transaction-icon transaction-icon-green" aria-hidden="true">💵</span>
+                        <div class="transaction-info">
+                            <span class="transaction-name">Freelance Payment</span>
+                            <span class="label">Income</span>
+                        </div>
+                        <div class="transaction-meta">
+                            <span class="transaction-amount amount-positive">+$850.00</span>
+                            <span class="label">May 25, 2024</span>
+                        </div>
+                    </li>
+                    <li class="transaction-item">
+                        <span class="transaction-icon transaction-icon-red" aria-hidden="true">☕</span>
+                        <div class="transaction-info">
+                            <span class="transaction-name">Coffee Shop</span>
+                            <span class="label">Food &amp; Dining</span>
+                        </div>
+                        <div class="transaction-meta">
+                            <span class="transaction-amount amount-negative">−$6.50</span>
+                            <span class="label">May 24, 2024</span>
+                        </div>
+                    </li>
+                    <li class="transaction-item">
+                        <span class="transaction-icon transaction-icon-blue" aria-hidden="true">⛽</span>
+                        <div class="transaction-info">
+                            <span class="transaction-name">Gas Station</span>
+                            <span class="label">Transport</span>
+                        </div>
+                        <div class="transaction-meta">
+                            <span class="transaction-amount amount-negative">−$45.00</span>
+                            <span class="label">May 22, 2024</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
